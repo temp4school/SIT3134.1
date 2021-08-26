@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" charset="utf-8"></script>
+    <title>iService - Registration</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="regform" class="" action="index.html" method="post">
+        <h3>Customer Registration</h3>
+        <h4>Create an iService Account</h4>
+        <div class="form-group">
+          <label for="">Country of residence*</label>
+          <select class="form-control" name="country-of-residence" style="text-align: center;" required>
+            <option value="">Choose from list</option>
+            <option value="Australia">Australia</option>
+            <option value="New Zealand">New Zealand</option>
+          </select>
+        </div>
+        <div class="form-group row">
+          <div class="col-md-6">
+            <label for="">First name*</label>
+            <input class="form-control" type="text" name="first-name" value="" required>
+          </div>
+          <div class="col-md-6">
+            <label for="">Last name*</label>
+            <input class="form-control" type="text" name="last-name" value="" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="">Email*</label>
+          <input class="form-control" type="text" name="email-address" value="" required>
+        </div>
+        <div class="form-group">
+          <label for="">Password*</label>
+          <input id="init" class="form-control" type="password" name="password-init" value="" required>
+        </div>
+        <div class="form-group">
+          <label for="">Confirm Password*</label>
+          <input id="conf" class="form-control" type="password" name="password-conf" value="" required>
+        </div>
+        <div class="form-group">
+          <label for="">Address*</label>
+          <input class="form-control" type="text" name="address-1" value="" required>
+          <br>
+          <input class="form-control" type="text" name="address-2" value="">
+        </div>
+        <div class="form-group row">
+          <div class="col-md-6">
+            <label for="">City*</label>
+            <input class="form-control" type="text" name="state-city" value="" required>
+          </div>
+          <div class="col-md-6">
+            <label for="">State, Province or Region*</label>
+            <input class="form-control" type="text" name="state-province-region" value="" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="">ZIP / Postal Code</label>
+          <input class="form-control" type="text" name="zip-code" value="">
+        </div>
+        <div class="form-group">
+          <label for="">Mobile Phone Number</label>
+          <input class="form-control" type="text" name="phone-number" value="">
+        </div>
+        <div class="form-group row">
+          <div class="col-md-5"></div>
+          <div class="col-md-2">
+            <button class="btn btn-success" type="submit" name="button">Create Account</button>
+          </div>
+          <div class="col-md-5"></div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
